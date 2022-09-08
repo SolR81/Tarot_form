@@ -1,0 +1,164 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarot</title>
+ </head>
+  <div class="container-fluid">
+    <div class="row">
+  <body class="bg">
+  
+   <div class="div-img"> <img src="https://imagizer.imageshack.com/img923/8423/W8Bxwu.png" alt="Texto sobre la imágen de una cornamenta de ciervo con una corona de flores" class="img1"/>
+    </div>
+    
+    <div class="form-general">
+  <form>
+    <div class="elements">
+      <label id="name-label" for="name">Nombre</label>
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        class="form-control"
+        placeholder="Ingresar nombre y apellido"
+        required
+      />
+    </div>
+    <div class="elements">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email" 
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Ingresar una dirección válida de mail"
+        required
+      />
+    </div>
+    
+    <div class="elements">
+      <p>Qué mazo desearías consultar?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Seleccionar Mazo</option>
+        <option value="student">Rider-Waite</option>
+        <option value="job">Marsellés</option>
+        <option value="learner">Book of Thoth</option>
+        <option value="preferNo">Egipcio</option>
+        <option value="other">Cristales</option>
+      </select>
+    </div>
+
+    <div class="elements">
+      <p>
+        Qué consulta desearías realizar?
+        <span class="clue">(Marcar todas las que correspondan)</span>
+      </p>
+      <label>
+        <input
+          name="prefer"
+          value="una-pregunta"
+          type="checkbox"
+          class="input-checkbox"
+        />Consulta de una pregunta</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="dos-preguntas"
+          type="checkbox"
+          class="input-checkbox"
+        />Consulta de dos preguntas</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="tres-preguntas"
+          type="checkbox"
+          class="input-checkbox"
+        />Consulta de tres preguntas</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="cruz-celta"
+          type="checkbox"
+          class="input-checkbox"
+        />Tirada de Cruz Celta</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="doce-casas"
+          type="checkbox"
+          class="input-checkbox"
+        />Tirada de Doce Casas</label
+      >
+     
+    </div>
+   
+   <div class="elements">
+      <p>
+        Qué es lo que más te gusta de nuestro servicio?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Seleccionar una opción</option>
+        <option value="precio">Precio</option>
+        <option value="atencion-al-cliente">Atención al Cliente</option>
+        <option value="velocidad">La espera es corta</option>
+      </select>
+    </div>
+   
+   <div class="elements">
+      <p>Recomendarías nuestros servicios?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitivamente"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitivamente</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="quizas"
+          type="radio"
+          class="input-radio"
+        />Quizás</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="no-estoy-segurx"
+          type="radio"
+          class="input-radio"
+        />No estoy segurx</label
+      >
+    </div>
+
+    <div class="elements">
+      <p>Comentarios o Sugerencias</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Dejanos tu comentario aquí..."
+      ></textarea>
+    </div>
+
+    <div class="elements">
+      <button type="submit" id="submit" class="submit-button">
+        Enviar
+      </button>
+    </div>
+  </form>
+  </div>
+    
+    </body>
+    </div>
+  </div>
+  
+</html>
